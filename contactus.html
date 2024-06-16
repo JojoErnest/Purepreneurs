@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <link rel="stylesheet" type="text/css" href="cssfile-contact.css" media="screen" />
+    <script src="validation.js"></script>
+    
+    <title>Project</title>
+</head>
+
+    <body>
+        <div id="header">
+            <img class="header-background" src="assets/HeaderBackground.png">
+            <div class="header-content">
+                <div class="header-image">
+                    <a href="mainmenu.html"><img src="assets/logo.png"></a>
+                </div>
+                <div id="navigation">
+                    <div class="dropdown">
+                        <button class="home">Support Program</button>
+                        <div class="dropdown-content">
+                            <a href="mainmenu.html">Home</a>
+                            <a href="supportprogram.html">Support Program</a>
+                            <a href="tools.html">Tools</a>
+                            <a href="contactus.html">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="body">
+            <div class="container">
+                <div class="form-container">
+                    <form name="contactForm" action="" method="post" onSubmit=" return formValidation()">
+                        <div class="user-details">
+                            <div class="input-box">
+                                <label class="details">Full Name</label>
+                                <input type="text" name="Name" placeholder="Enter your name" />
+                            </div>
+                            <div class="input-box">
+                                <label class="details">Email</label>
+                                <input type="text" name="Email" placeholder="Enter your email" />
+                            </div>
+
+                            <div class="input-box">
+                                <label for="message" class="details">Message</label>
+                                <textarea name="Message" rows="6" placeholder="Enter your message"></textarea>
+                            </div>
+                        </div>
+
+                        <div id="validationinfo" class="validation-info">
+
+                        </div>
+
+                        <div class="button">
+                            <input type="submit" name="submit" value="Send" />
+                        </div>
+
+                    </form>
+                </div>
+                
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <img class="footer-background" src="assets/FooterBackground.png">
+
+            <div class="footer-content">
+                <div class="footer-images">
+                    <img src="assets/linkedin.png" />
+                    <img src="assets/facebook.png" />
+                </div>
+
+            </div>
+        </div>
+</body>
+</html>
